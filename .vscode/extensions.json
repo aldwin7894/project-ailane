@@ -1,0 +1,9 @@
+{
+  "recommendations": [
+    "swellaby.workspace-config-plus",
+    "cb4.multi-terminal-launcher",
+    "bradlc.vscode-tailwindcss",
+    "sonarsource.sonarlint-vscode",
+    "dbaeumer.vscode-eslint",
+  ]
+}
