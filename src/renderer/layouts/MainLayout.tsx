@@ -5,7 +5,7 @@ type Props = {
   children: React.ReactNode;
 };
 
-export default function MainLayout({ children }: Props): JSX.Element {
+export default function MainLayout({ children }: Readonly<Props>): JSX.Element {
   return (
     <>
       <NavBar />

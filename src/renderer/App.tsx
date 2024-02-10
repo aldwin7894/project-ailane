@@ -1,10 +1,11 @@
 import { Suspense, useEffect } from "react";
 import { Outlet, Route, Routes, useLocation } from "react-router-dom";
-import MainLayout from "./layouts/MainLayout";
-import Home from "./components/Home";
-import Sales from "./components/Sales";
+
 import Expenses from "./components/Expenses";
+import Home from "./components/Home";
 import Reports from "./components/Reports";
+import Sales from "./components/Sales";
+import MainLayout from "./layouts/MainLayout";
 
 export default function App(): JSX.Element {
   const location = useLocation();

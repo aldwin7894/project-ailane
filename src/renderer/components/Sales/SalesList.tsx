@@ -6,14 +6,16 @@ type Props = {
   sales: Sales[];
 };
 
-export default function SalesList({ sales = [] }: Props): JSX.Element {
+export default function SalesList({
+  sales = [],
+}: Readonly<Props>): JSX.Element {
   const [rowData, setRowData] = useState([...sales]);
-  const [colDefs] = useState<ColDef[]>([
+  const colDefs: ColDef[] = [
     { headerName: "Invoice Number", field: "invoice_number" },
     { headerName: "Total", field: "total_amount" },
     { headerName: "Discount", field: "discount_amount" },
     { headerName: "Tax", field: "tax_amount" },
-  ]);
+  ];
 
   useEffect(() => {
     setRowData([...sales]);

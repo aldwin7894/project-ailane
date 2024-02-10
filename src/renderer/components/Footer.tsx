@@ -1,7 +1,5 @@
-import { useState } from "react";
-
 export default function Footer(): JSX.Element {
-  const [versions] = useState(window.electron.process.versions);
+  const { versions } = window.electron.process;
 
   return (
     <footer className="dark:bg-gradient-to-t dark:from-blue-900/[.15] dark:to-transparent">

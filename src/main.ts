@@ -1,8 +1,10 @@
-import { app, shell, BrowserWindow, ipcMain } from "electron";
 import { join } from "path";
+
 import { electronApp, optimizer, is } from "@electron-toolkit/utils";
-import icon from "../resources/icon.png";
+import { app, shell, BrowserWindow, ipcMain } from "electron";
+
 import DB from "./database";
+import icon from "../resources/icon.png";
 
 function createWindow(): void {
   // Create the browser window.

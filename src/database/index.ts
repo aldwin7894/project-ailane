@@ -1,6 +1,7 @@
-import sqlite from "better-sqlite3";
-import { is } from "@electron-toolkit/utils";
 import path from "path";
+
+import { is } from "@electron-toolkit/utils";
+import sqlite from "better-sqlite3";
 
 const dbPath = is.dev
   ? "./data.db"

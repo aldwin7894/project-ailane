@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+
 import SalesList from "./SalesList";
 
 export default function Sales(): JSX.Element {

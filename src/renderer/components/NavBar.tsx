@@ -1,6 +1,7 @@
-import electronLogo from "../assets/electron.svg";
-import { Link, useLocation } from "react-router-dom";
 import clsx from "clsx";
+import { Link, useLocation } from "react-router-dom";
+
+import electronLogo from "../assets/electron.svg";
 
 export default function NavBar(): JSX.Element {
   const location = useLocation();
@@ -18,7 +19,7 @@ export default function NavBar(): JSX.Element {
             href="#"
           >
             <img className="h-auto w-10" src={electronLogo} alt="Logo" />
-            Brand
+            <h1>Brand</h1>
           </a>
           <div className="sm:hidden">
             <button
