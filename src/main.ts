@@ -54,9 +54,30 @@ app.whenReady().then(() => {
 
   // IPC test
   ipcMain.on("ping", () => {
-    const query = DB.prepare("INSERT INTO sales (total) VALUES (?)");
-    const result = query.run("1000");
-    console.log("pong", result);
+    console.log("pong");
+  });
+
+  ipcMain.handle("get-sales", () => {
+    const query = DB.prepare("SELECT * FROM sales");
+    const result = query.all();
+    console.log("get-sales", result);
+    return result;
+  });
+  ipcMain.handle("create-sale", (_, data: Sales) => {
+    const { invoice_number, total_amount, tax_amount, discount_amount } = data;
+    const query = DB.prepare(`
+      INSERT INTO sales (invoice_number, total_amount, tax_amount, total_amount)
+      VALUES(?, ?, ?, ?)
+      RETURNING *
+    `);
+    const result = query.get(
+      invoice_number,
+      total_amount,
+      tax_amount,
+      discount_amount,
+    );
+    console.log("create-sale", result);
+    return result;
   });
 
   createWindow();

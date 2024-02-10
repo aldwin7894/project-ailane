@@ -1,6 +1,11 @@
 import electronLogo from "../assets/electron.svg";
+import { Link, useLocation } from "react-router-dom";
+import clsx from "clsx";
 
 export default function NavBar(): JSX.Element {
+  const location = useLocation();
+  const { pathname } = location;
+
   return (
     <header className="z-50 flex w-full flex-wrap bg-blue-600 py-4 text-sm sm:flex-nowrap sm:justify-start">
       <nav
@@ -62,18 +67,50 @@ export default function NavBar(): JSX.Element {
           className="hs-collapse hidden grow basis-full overflow-hidden transition-all duration-300 sm:block"
         >
           <div className="mt-5 flex flex-col gap-5 sm:mt-0 sm:flex-row sm:items-center sm:justify-end sm:ps-5">
-            <a className="font-medium text-white" href="#" aria-current="page">
-              Landing
-            </a>
-            <a className="font-medium text-gray-300 hover:text-white" href="#">
-              Account
-            </a>
-            <a className="font-medium text-gray-300 hover:text-white" href="#">
-              Work
-            </a>
-            <a className="font-medium text-gray-300 hover:text-white" href="#">
-              Blog
-            </a>
+            <Link
+              className={clsx(
+                "font-medium",
+                pathname === "/"
+                  ? "text-white"
+                  : "text-gray-300 hover:text-white",
+              )}
+              to="/"
+            >
+              Home
+            </Link>
+            <Link
+              className={clsx(
+                "font-medium",
+                pathname === "/sales"
+                  ? "text-white"
+                  : "text-gray-300 hover:text-white",
+              )}
+              to="/sales"
+            >
+              Sales
+            </Link>
+            <Link
+              className={clsx(
+                "font-medium",
+                pathname === "/expenses"
+                  ? "text-white"
+                  : "text-gray-300 hover:text-white",
+              )}
+              to="/expenses"
+            >
+              Expenses
+            </Link>
+            <Link
+              className={clsx(
+                "font-medium",
+                pathname === "/reports"
+                  ? "text-white"
+                  : "text-gray-300 hover:text-white",
+              )}
+              to="/reports"
+            >
+              Report
+            </Link>
           </div>
         </div>
       </nav>

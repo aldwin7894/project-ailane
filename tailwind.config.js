@@ -6,6 +6,7 @@ import formsPlugin from "@tailwindcss/forms";
 import aspectRatioPlugin from "@tailwindcss/aspect-ratio";
 import animatecssPlugin from "tailwindcss-animatecss";
 import prelinePlugin from "preline/plugin";
+import { addDynamicIconSelectors } from "@iconify/tailwind";
 
 export default {
   content: [
@@ -62,6 +63,7 @@ export default {
     formsPlugin,
     aspectRatioPlugin,
     animatecssPlugin,
+    addDynamicIconSelectors(),
     plugin(({ matchUtilities, theme }) => {
       matchUtilities(
         {
