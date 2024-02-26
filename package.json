@@ -39,7 +39,7 @@
     "@typescript-eslint/eslint-plugin": "^7.0.0",
     "@typescript-eslint/parser": "^6.21.0",
     "@vitejs/plugin-react": "^4.2.1",
-    "ag-grid-react": "^31.0.3",
+    "ag-grid-react": "^31.1.1",
     "autoprefixer": "^10.4.17",
     "clsx": "^2.1.0",
     "cssnano": "^6.0.3",
