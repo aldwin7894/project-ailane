@@ -55,7 +55,7 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-tailwindcss": "^3.14.2",
     "jsx-runtime": "^1.2.0",
-    "postcss": "^8.4.33",
+    "postcss": "^8.4.36",
     "postcss-flexbugs-fixes": "^5.0.2",
     "postcss-import": "^16.0.1",
     "postcss-nesting": "^12.0.2",
