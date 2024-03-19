@@ -607,15 +607,6 @@
     username "^5.1.0"
     yarn-or-npm "^3.0.1"
 
-"@electron-forge/maker-base@7.2.0":
-  version "7.2.0"
-  resolved "https://registry.yarnpkg.com/@electron-forge/maker-base/-/maker-base-7.2.0.tgz#2086b1ffc110316d8336e96e72c81aefd0c62c54"
-  integrity sha512-5dCFiVo4WhSlLf/T9MP+jnMqP3qfmwvjCSiTRE08USeotNWhycztcFox94NbxMJkRt329tNeG2RRs7RzdCz21w==
-  dependencies:
-    "@electron-forge/shared-types" "7.2.0"
-    fs-extra "^10.0.0"
-    which "^2.0.2"
-
 "@electron-forge/maker-base@7.3.0":
   version "7.3.0"
   resolved "https://registry.yarnpkg.com/@electron-forge/maker-base/-/maker-base-7.3.0.tgz#d56d13592fd0aa7b593da0629b5051ca9a121617"
@@ -636,13 +627,13 @@
   optionalDependencies:
     electron-winstaller "^5.0.0"
 
-"@electron-forge/maker-zip@^7.2.0":
-  version "7.2.0"
-  resolved "https://registry.yarnpkg.com/@electron-forge/maker-zip/-/maker-zip-7.2.0.tgz#59926d108dc2af52a80bc1ad673c33eb7290ae09"
-  integrity sha512-U6FSSMcHogHDv+7SmF037lJ9m0stwwqyerw7Q6mD3jKQHX9GBxFApEzA5HSURGPAEBhPgPppYOSMGRB6LV5F2g==
+"@electron-forge/maker-zip@^7.3.0":
+  version "7.3.0"
+  resolved "https://registry.yarnpkg.com/@electron-forge/maker-zip/-/maker-zip-7.3.0.tgz#064ab2857fdbb183c3226bb0f69b77abdab1e172"
+  integrity sha512-VYYLScDpibVIiMRK7JWeCS9G8VYvPXa1X6p6fNYQoFOWommG9zC7OOnFfNnLBrH1+0ginZRJeLD1zo+cM12JuQ==
   dependencies:
-    "@electron-forge/maker-base" "7.2.0"
-    "@electron-forge/shared-types" "7.2.0"
+    "@electron-forge/maker-base" "7.3.0"
+    "@electron-forge/shared-types" "7.3.0"
     cross-zip "^4.0.0"
     fs-extra "^10.0.0"
     got "^11.8.5"
