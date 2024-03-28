@@ -44,7 +44,7 @@
     "clsx": "^2.1.0",
     "cssnano": "^6.0.5",
     "cssnano-preset-advanced": "^6.1.0",
-    "electron": "^29.0.1",
+    "electron": "^29.1.6",
     "eslint": "^8.57.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-import-resolver-typescript": "^3.6.1",
