@@ -633,13 +633,13 @@
     fs-extra "^10.0.0"
     got "^11.8.5"
 
-"@electron-forge/plugin-auto-unpack-natives@^7.2.0":
-  version "7.2.0"
-  resolved "https://registry.yarnpkg.com/@electron-forge/plugin-auto-unpack-natives/-/plugin-auto-unpack-natives-7.2.0.tgz#177372de7913a710352341e5323f34e1f6eb7dba"
-  integrity sha512-5BI2t/Qt9wP188PHoS1qv/0CqIhByyacWRVeAgQ9kP6iMsPyyc4kn3kWGDQF2MyFqMmusRzcdM+SljDGR9aIeg==
+"@electron-forge/plugin-auto-unpack-natives@^7.3.1":
+  version "7.3.1"
+  resolved "https://registry.yarnpkg.com/@electron-forge/plugin-auto-unpack-natives/-/plugin-auto-unpack-natives-7.3.1.tgz#2c1a652727e135d33864410f53d5deb9c6709fee"
+  integrity sha512-DNg4KK2GcFycwQHV/H5KYUGQMdmNgGZ5lMAdaBUY+tLyiiJpNdjAfH7H+UwL2zupxF+XJ5llv1GQyObQJxOkXA==
   dependencies:
-    "@electron-forge/plugin-base" "7.2.0"
-    "@electron-forge/shared-types" "7.2.0"
+    "@electron-forge/plugin-base" "7.3.1"
+    "@electron-forge/shared-types" "7.3.1"
 
 "@electron-forge/plugin-base@7.2.0":
   version "7.2.0"
@@ -647,6 +647,13 @@
   integrity sha512-c/pQK36BMBMKiemO68g1ZQOCXBA93x/aeX3lIXwK5bKVuaGt16Unfmby5Q7iIvY+/KsBuLYGkAder8HDN+4Nbw==
   dependencies:
     "@electron-forge/shared-types" "7.2.0"
+
+"@electron-forge/plugin-base@7.3.1":
+  version "7.3.1"
+  resolved "https://registry.yarnpkg.com/@electron-forge/plugin-base/-/plugin-base-7.3.1.tgz#447c4480ab2f97915cba88be040cc56d2647d4d7"
+  integrity sha512-4mAzUqfOkRqBwFmE3yO+9dEM2nK9PN/UXFALjN42GS7hbLorluHVmzELkC48Y6M0k1Q+GN3NAdzfMiD+X2PWVA==
+  dependencies:
+    "@electron-forge/shared-types" "7.3.1"
 
 "@electron-forge/plugin-vite@7.2.0":
   version "7.2.0"
@@ -675,6 +682,16 @@
   dependencies:
     "@electron-forge/tracer" "7.2.0"
     "@electron/packager" "^18.0.0"
+    "@electron/rebuild" "^3.2.10"
+    listr2 "^5.0.3"
+
+"@electron-forge/shared-types@7.3.1":
+  version "7.3.1"
+  resolved "https://registry.yarnpkg.com/@electron-forge/shared-types/-/shared-types-7.3.1.tgz#e75ccfa67a730683e53619e77977f3333ece36a0"
+  integrity sha512-yRW3UWd+AwtK1UrZxWCtxqnD1lF6e+1GWXdgR186/UX2CMy+jVzUtL4Xk+xMKrLgiVKZglVbTdee1cEb6egtVw==
+  dependencies:
+    "@electron-forge/tracer" "7.3.1"
+    "@electron/packager" "^18.1.3"
     "@electron/rebuild" "^3.2.10"
     listr2 "^5.0.3"
 
@@ -729,6 +746,13 @@
   version "7.2.0"
   resolved "https://registry.yarnpkg.com/@electron-forge/tracer/-/tracer-7.2.0.tgz#e70fb373946cce4c40409a3d9152d3bbfcec2057"
   integrity sha512-EoJ07nptEuuY2fcs/bUWzIf11RQRx6Ch/dZ6A9WIRcFYe9cFrslQwvyUf0siY3jcqVvxETCz69JGuBxKGwak7A==
+  dependencies:
+    chrome-trace-event "^1.0.3"
+
+"@electron-forge/tracer@7.3.1":
+  version "7.3.1"
+  resolved "https://registry.yarnpkg.com/@electron-forge/tracer/-/tracer-7.3.1.tgz#1ea88bf4cada001964f046bb07a6ee6534020b1f"
+  integrity sha512-Jz6SgnHZ2Gk4l7WRu/rLyQTe6F23dXcTNsjI5gtUEJxjjd2K9L0UoxVcGikA7SEMUufaPyskSJfrW7NSZ4s43Q==
   dependencies:
     chrome-trace-event "^1.0.3"
 
@@ -813,7 +837,7 @@
     minimist "^1.2.6"
     plist "^3.0.5"
 
-"@electron/packager@^18.0.0":
+"@electron/packager@^18.0.0", "@electron/packager@^18.1.3":
   version "18.3.2"
   resolved "https://registry.yarnpkg.com/@electron/packager/-/packager-18.3.2.tgz#49412a06b3233635bd9cdf87edf9cd9e2aa0567f"
   integrity sha512-orjylavppgIh24qkNpWm2B/LQUpCS/YLOoKoU+eMK/hJgIhShLDsusPIQzgUGVwNCichu8/zPAGfdQZXHG0gtw==
@@ -6453,16 +6477,7 @@ statuses@2.0.1:
   resolved "https://registry.yarnpkg.com/statuses/-/statuses-2.0.1.tgz#55cb000ccf1d48728bd23c685a063998cf1a1b63"
   integrity sha512-RwNA9Z/7PrK06rYLIzFMlaF+l73iwpzsqRIFgbMLbTcLD6cOao82TaWefPXQvB2fOC4AjuYSEndS7N/mTCbkdQ==
 
-"string-width-cjs@npm:string-width@^4.2.0":
-  version "4.2.3"
-  resolved "https://registry.yarnpkg.com/string-width/-/string-width-4.2.3.tgz#269c7117d27b05ad2e536830a8ec895ef9c6d010"
-  integrity sha512-wKyQRQpjJ0sIp62ErSZdGsjMJWsap5oRNihHhu6G7JVO/9jIB6UyevL+tXuOqrng8j/cxKTWyWUwvSTriiZz/g==
-  dependencies:
-    emoji-regex "^8.0.0"
-    is-fullwidth-code-point "^3.0.0"
-    strip-ansi "^6.0.1"
-
-"string-width@^1.0.2 || 2 || 3 || 4", string-width@^4.1.0, string-width@^4.2.0, string-width@^4.2.3:
+"string-width-cjs@npm:string-width@^4.2.0", "string-width@^1.0.2 || 2 || 3 || 4", string-width@^4.1.0, string-width@^4.2.0, string-width@^4.2.3:
   version "4.2.3"
   resolved "https://registry.yarnpkg.com/string-width/-/string-width-4.2.3.tgz#269c7117d27b05ad2e536830a8ec895ef9c6d010"
   integrity sha512-wKyQRQpjJ0sIp62ErSZdGsjMJWsap5oRNihHhu6G7JVO/9jIB6UyevL+tXuOqrng8j/cxKTWyWUwvSTriiZz/g==
@@ -6533,14 +6548,7 @@ string_decoder@^1.1.1:
   dependencies:
     safe-buffer "~5.2.0"
 
-"strip-ansi-cjs@npm:strip-ansi@^6.0.1":
-  version "6.0.1"
-  resolved "https://registry.yarnpkg.com/strip-ansi/-/strip-ansi-6.0.1.tgz#9e26c63d30f53443e9489495b2105d37b67a85d9"
-  integrity sha512-Y38VPSHcqkFrCpFnQ9vuSXmquuv5oXOKpGeT6aGrr3o3Gc9AlVa6JBfUSOCnbxGGZF+/0ooI7KrPuUSztUdU5A==
-  dependencies:
-    ansi-regex "^5.0.1"
-
-strip-ansi@^6.0.0, strip-ansi@^6.0.1:
+"strip-ansi-cjs@npm:strip-ansi@^6.0.1", strip-ansi@^6.0.0, strip-ansi@^6.0.1:
   version "6.0.1"
   resolved "https://registry.yarnpkg.com/strip-ansi/-/strip-ansi-6.0.1.tgz#9e26c63d30f53443e9489495b2105d37b67a85d9"
   integrity sha512-Y38VPSHcqkFrCpFnQ9vuSXmquuv5oXOKpGeT6aGrr3o3Gc9AlVa6JBfUSOCnbxGGZF+/0ooI7KrPuUSztUdU5A==
@@ -7135,7 +7143,7 @@ word-wrap@^1.2.3:
   resolved "https://registry.yarnpkg.com/word-wrap/-/word-wrap-1.2.5.tgz#d2c45c6dd4fbce621a66f136cbe328afd0410b34"
   integrity sha512-BN22B5eaMMI9UMtjrGd5g5eCYPpCPDUy0FJXbYsaT5zYxjFOckS53SQDE3pWkVoWpHXVb3BrYcEN4Twa55B5cA==
 
-"wrap-ansi-cjs@npm:wrap-ansi@^7.0.0":
+"wrap-ansi-cjs@npm:wrap-ansi@^7.0.0", wrap-ansi@^7.0.0:
   version "7.0.0"
   resolved "https://registry.yarnpkg.com/wrap-ansi/-/wrap-ansi-7.0.0.tgz#67e145cff510a6a6984bdf1152911d69d2eb9e43"
   integrity sha512-YVGIj2kamLSTxw6NsZjoBxfSwsn0ycdesmc4p+Q21c5zPuZ1pl+NfxVdxPtdHvmNVOQ6XSYG4AUtyt/Fi7D16Q==
@@ -7148,15 +7156,6 @@ wrap-ansi@^6.2.0:
   version "6.2.0"
   resolved "https://registry.yarnpkg.com/wrap-ansi/-/wrap-ansi-6.2.0.tgz#e9393ba07102e6c91a3b221478f0257cd2856e53"
   integrity sha512-r6lPcBGxZXlIcymEu7InxDMhdW0KDxpLgoFLcguasxCaJ/SOIZwINatK9KY/tf+ZrlywOKU0UDj3ATXUBfxJXA==
-  dependencies:
-    ansi-styles "^4.0.0"
-    string-width "^4.1.0"
-    strip-ansi "^6.0.0"
-
-wrap-ansi@^7.0.0:
-  version "7.0.0"
-  resolved "https://registry.yarnpkg.com/wrap-ansi/-/wrap-ansi-7.0.0.tgz#67e145cff510a6a6984bdf1152911d69d2eb9e43"
-  integrity sha512-YVGIj2kamLSTxw6NsZjoBxfSwsn0ycdesmc4p+Q21c5zPuZ1pl+NfxVdxPtdHvmNVOQ6XSYG4AUtyt/Fi7D16Q==
   dependencies:
     ansi-styles "^4.0.0"
     string-width "^4.1.0"
