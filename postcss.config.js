@@ -1,11 +1,11 @@
 /* eslint-disable global-require */
-import importPlugin from "postcss-import";
-import tailwindPlugin from "tailwindcss";
-import flexBugsFixesPlugin from "postcss-flexbugs-fixes";
-import nestingPlugin from "postcss-nesting";
-import presetEnvPlugin from "postcss-preset-env";
 import autoprefixerPlugin from "autoprefixer";
 import cssnanoPlugin from "cssnano";
+import flexBugsFixesPlugin from "postcss-flexbugs-fixes";
+import importPlugin from "postcss-import";
+import nestingPlugin from "postcss-nesting";
+import presetEnvPlugin from "postcss-preset-env";
+import tailwindPlugin from "tailwindcss";
 
 export default {
   plugins: [

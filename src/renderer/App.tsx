@@ -5,6 +5,7 @@ import Expenses from "./components/Expenses";
 import Home from "./components/Home";
 import Reports from "./components/Reports";
 import Sales from "./components/Sales";
+import NewSale from "./components/Sales/NewSale";
 import MainLayout from "./layouts/MainLayout";
 
 export default function App(): JSX.Element {
@@ -28,6 +29,7 @@ export default function App(): JSX.Element {
       >
         <Route path="/" element={<Home />} />
         <Route path="/sales" element={<Sales />} />
+        <Route path="/sales/new" element={<NewSale />} />
         <Route path="/expenses" element={<Expenses />} />
         <Route path="/reports" element={<Reports />} />
       </Route>
