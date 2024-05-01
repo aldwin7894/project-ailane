@@ -46,7 +46,7 @@
     "autoprefixer": "^10.4.19",
     "clsx": "^2.1.0",
     "cssnano": "^6.1.2",
-    "cssnano-preset-advanced": "^6.1.2",
+    "cssnano-preset-advanced": "^7.0.1",
     "electron": "^28.2.7",
     "eslint": "^8.57.0",
     "eslint-config-prettier": "^9.1.0",
