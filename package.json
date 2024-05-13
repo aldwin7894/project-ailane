@@ -61,7 +61,7 @@
     "postcss": "^8.4.38",
     "postcss-flexbugs-fixes": "^5.0.2",
     "postcss-import": "^16.1.0",
-    "postcss-nesting": "^12.1.2",
+    "postcss-nesting": "^12.1.3",
     "postcss-preset-env": "^9.5.4",
     "preline": "^2.1.0",
     "prettier": "^3.2.5",
