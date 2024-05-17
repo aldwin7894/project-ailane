@@ -19,7 +19,7 @@
     "@electron-toolkit/preload": "^3.0.1",
     "@electron-toolkit/utils": "^3.0.0",
     "better-sqlite3": "^9.5.0",
-    "electron-squirrel-startup": "^1.0.0"
+    "electron-squirrel-startup": "^1.0.1"
   },
   "devDependencies": {
     "@electron-forge/cli": "7.4.0",
