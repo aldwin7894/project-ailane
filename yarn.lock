@@ -1105,10 +1105,10 @@
     "@iconify/types" "*"
     pathe "^1.1.2"
 
-"@iconify/tailwind@^1.0.1":
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/@iconify/tailwind/-/tailwind-1.0.1.tgz#b2238a509289efa3110f56d59a7238ff2849e82b"
-  integrity sha512-Y0AbOvabPJ4qjhQGWvCfhWoYC7aETqYAg9V++xkHFqy9gcUteKnEEmgOEsoOf6T7V9Xz34qKNLnaIAVkt1gLtQ==
+"@iconify/tailwind@^1.1.1":
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/@iconify/tailwind/-/tailwind-1.1.1.tgz#8b6f8429445d57382753e1a960d83e551376de14"
+  integrity sha512-4mmA//qjZigv7D4KlqcVSYTqfRIJzyts2/lSCAJfCL0rVMIE76+ifJnaE5jxCo1+nYGBF8FsFo0qFOs+sX4EnA==
   dependencies:
     "@iconify/types" "^2.0.0"
 
