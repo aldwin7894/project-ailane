@@ -1401,17 +1401,10 @@
   resolved "https://registry.yarnpkg.com/@types/minimatch/-/minimatch-5.1.2.tgz#07508b45797cb81ec3f273011b054cd0755eddca"
   integrity sha512-K0VQKziLUWkVKiRVrx4a40iPaxTUefQmjtkQofBkYRcoaaL/8rhwDWww9qWbrgicNOgnpIsMxyNIUM4+n6dUIA==
 
-"@types/node@*", "@types/node@^20.12.4":
-  version "20.12.4"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-20.12.4.tgz#af5921bd75ccdf3a3d8b3fa75bf3d3359268cd11"
-  integrity sha512-E+Fa9z3wSQpzgYQdYmme5X3OTuejnnTx88A6p6vkkJosR3KBz+HpE3kqNm98VE6cfLFcISx7zW7MsJkH6KwbTw==
-  dependencies:
-    undici-types "~5.26.4"
-
-"@types/node@^18.11.18":
-  version "18.19.29"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-18.19.29.tgz#e7e9d796c1e195be7e7daf82b4abc50d017fb9db"
-  integrity sha512-5pAX7ggTmWZdhUrhRWLPf+5oM7F80bcKVCBbr0zwEkTNzTJL2CWQjznpFgHYy6GrzkYi2Yjy7DHKoynFxqPV8g==
+"@types/node@*", "@types/node@^20.12.4", "@types/node@^20.9.0":
+  version "20.12.12"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-20.12.12.tgz#7cbecdf902085cec634fdb362172dfe12b8f2050"
+  integrity sha512-eWLDGF/FOSPtAvEqeRAQ4C8LSA7M1I7i0ky1I8U7kD1J5ITyW3AsRhQrKVoWf5pFKZ2kILsEGJhsI9r93PYnOw==
   dependencies:
     undici-types "~5.26.4"
 
@@ -2760,13 +2753,13 @@ electron-winstaller@^5.0.0:
   optionalDependencies:
     "@electron/windows-sign" "^1.1.2"
 
-electron@^28.2.7:
-  version "28.2.10"
-  resolved "https://registry.yarnpkg.com/electron/-/electron-28.2.10.tgz#4e168568406a8b1e9b9a5859e988c905b9a57570"
-  integrity sha512-0rGBJNogcl2FIRxGRUv9zuMaBP78nSBJW+Bd1U7OGeg8IEkSIbHOhfn71XoGxgbOUSCEXjjyftq4mtAAVbUsZQ==
+electron@^30.0.6:
+  version "30.0.6"
+  resolved "https://registry.yarnpkg.com/electron/-/electron-30.0.6.tgz#9ddea5f68396ecca88ad7c2c466a30fc9c16144b"
+  integrity sha512-PkhEPFdpYcTzjAO3gMHZ+map7g2+xCrMDedo/L1i0ir2BRXvAB93IkTJX497U6Srb/09r2cFt+k20VPNVCdw3Q==
   dependencies:
     "@electron/get" "^2.0.0"
-    "@types/node" "^18.11.18"
+    "@types/node" "^20.9.0"
     extract-zip "^2.0.1"
 
 emoji-regex@^8.0.0:
