@@ -45,7 +45,7 @@
     "ag-grid-react": "^32.3.1",
     "autoprefixer": "^10.4.20",
     "clsx": "^2.1.1",
-    "cssnano": "^7.0.4",
+    "cssnano": "^7.0.6",
     "cssnano-preset-advanced": "^7.0.4",
     "electron": "^31.2.1",
     "eslint": "8.57.0",
