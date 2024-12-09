@@ -18,7 +18,7 @@
   "dependencies": {
     "@electron-toolkit/preload": "^3.0.1",
     "@electron-toolkit/utils": "^3.0.0",
-    "better-sqlite3": "^11.1.2",
+    "better-sqlite3": "^11.7.0",
     "electron-squirrel-startup": "^1.0.1"
   },
   "devDependencies": {
