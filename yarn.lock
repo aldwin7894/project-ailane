@@ -1692,24 +1692,24 @@ acorn@^8.9.0:
   resolved "https://registry.yarnpkg.com/acorn/-/acorn-8.12.1.tgz#71616bdccbe25e27a54439e0046e89ca76df2248"
   integrity sha512-tcpGyI9zbizT9JbV6oYE477V6mTlXvvi0T0G3SNIYE2apm/G5huBa1+K89VGeovbg+jycCrfhl3ADxErOuO6Jg==
 
-ag-charts-types@10.3.1:
-  version "10.3.1"
-  resolved "https://registry.yarnpkg.com/ag-charts-types/-/ag-charts-types-10.3.1.tgz#b60163a5da5f27222db71d4fcc20c0aed1854c9c"
-  integrity sha512-oZvu9vJLk6lmzaYi0TmVVmHFZJpVNFziU0bnllx4wR3muXCmnxz5LouKIZ8CYnNiC7VO5HmHNlFu+0DmEO5zxg==
+ag-charts-types@11.0.0:
+  version "11.0.0"
+  resolved "https://registry.yarnpkg.com/ag-charts-types/-/ag-charts-types-11.0.0.tgz#aab86fab7e49a2e5204f4d5fb925110d0ca4502f"
+  integrity sha512-8KUCZtKaUNjxqvo5E71sP7nBpRHMSv81anK93UCMMWYZC3iBSEF1pxfYS2/GEM9oo5VP65mevDJsq10dp0vooQ==
 
-ag-grid-community@32.3.1:
-  version "32.3.1"
-  resolved "https://registry.yarnpkg.com/ag-grid-community/-/ag-grid-community-32.3.1.tgz#9b7b0580635e6243c6b0c50af66b590d55289293"
-  integrity sha512-j/VpFbDO+7tDNG5xq9JIg3zSYxKbTKlAYjaAFSUwiJF8SDyWYUALWjtiCa+mr/RowyGRTcFv5sc+HCbS6C4UKQ==
+ag-grid-community@33.0.1:
+  version "33.0.1"
+  resolved "https://registry.yarnpkg.com/ag-grid-community/-/ag-grid-community-33.0.1.tgz#f73cab26363b95f6e31ae1f00cc784bca28a5c71"
+  integrity sha512-1OIsp7WVbJRkQW4uN7TQOP6xdj5bwGY9Doi8cwgL88mVRDCy2ss/KUmrqzohwwXMdEQSCev7EpMICD3sDmlHyg==
   dependencies:
-    ag-charts-types "10.3.1"
+    ag-charts-types "11.0.0"
 
-ag-grid-react@^32.3.1:
-  version "32.3.1"
-  resolved "https://registry.yarnpkg.com/ag-grid-react/-/ag-grid-react-32.3.1.tgz#6cea84597b1ccf663027d8113a228e690509de09"
-  integrity sha512-5xd9LGiJHghbb7KwlqzayJ+7Ot+kYXcBwwZan0cT2xtVHpJi9sz//PoWGzBILhxX707ocXz0ICsEyErAa+8WWw==
+ag-grid-react@^33.0.1:
+  version "33.0.1"
+  resolved "https://registry.yarnpkg.com/ag-grid-react/-/ag-grid-react-33.0.1.tgz#94c2e09688479de48bf532591181f89a1c7bc516"
+  integrity sha512-xXX6SHCL1Fkdt/TDEtCnSscvpCVwmfo4oZqsBNYqV5HFUmOxQnKII7g/nBEbtb+MzDhPi/6We0325GrjrnHw6g==
   dependencies:
-    ag-grid-community "32.3.1"
+    ag-grid-community "33.0.1"
     prop-types "^15.8.1"
 
 agent-base@6, agent-base@^6.0.2:
