@@ -11,4 +11,11 @@ export default defineConfig({
       external: ["better-sqlite3"],
     },
   },
+  css: {
+    preprocessorOptions: {
+      scss: {
+        api: "modern-compiler",
+      },
+    },
+  },
 });

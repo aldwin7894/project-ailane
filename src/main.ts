@@ -6,6 +6,9 @@ import { app, shell, BrowserWindow, ipcMain } from "electron";
 import DB from "./database";
 import icon from "../resources/icon.png";
 
+// eslint-disable-next-line @typescript-eslint/no-require-imports
+if (require("electron-squirrel-startup")) app.quit();
+
 function createWindow(): void {
   // Create the browser window.
   const mainWindow = new BrowserWindow({
@@ -21,7 +24,7 @@ function createWindow(): void {
   });
 
   mainWindow.on("ready-to-show", () => {
-    mainWindow.show();
+    mainWindow.maximize();
   });
 
   mainWindow.webContents.setWindowOpenHandler(details => {

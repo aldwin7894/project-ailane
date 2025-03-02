@@ -9,7 +9,7 @@ const dbPath = is.dev
   : path.join(process.resourcesPath, "./data.db");
 const migrationsPath = is.dev
   ? "./resources/migrations"
-  : path.join(process.resourcesPath, "./migrations");
+  : path.join(process.resourcesPath, "./resources/migrations");
 const DB = new sqlite(dbPath, {
   verbose: message => is.dev && console.log(message),
 });

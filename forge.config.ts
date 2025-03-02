@@ -1,6 +1,5 @@
 import { MakerSquirrel } from "@electron-forge/maker-squirrel";
 import { MakerZIP } from "@electron-forge/maker-zip";
-import { AutoUnpackNativesPlugin } from "@electron-forge/plugin-auto-unpack-natives";
 import { VitePlugin } from "@electron-forge/plugin-vite";
 import type { ForgeConfig } from "@electron-forge/shared-types";
 
@@ -8,6 +7,7 @@ const config: ForgeConfig = {
   packagerConfig: {
     asar: true,
     overwrite: true,
+    extraResource: ["./resources"],
   },
   rebuildConfig: {
     force: true,
@@ -46,7 +46,6 @@ const config: ForgeConfig = {
         },
       ],
     }),
-    new AutoUnpackNativesPlugin({}),
   ],
 };
 
