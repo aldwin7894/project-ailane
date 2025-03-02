@@ -1,4 +1,5 @@
 import clsx from "clsx";
+import { JSX } from "react";
 import { Link, useLocation } from "react-router-dom";
 
 import electronLogo from "../assets/electron.svg";

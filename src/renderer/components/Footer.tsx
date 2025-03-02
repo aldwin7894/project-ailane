@@ -1,3 +1,5 @@
+import { JSX } from "react";
+
 export default function Footer(): JSX.Element {
   const { versions } = window.electron.process;
 

@@ -1,4 +1,4 @@
-import { Suspense, useEffect } from "react";
+import { JSX, Suspense, useEffect } from "react";
 import { Outlet, Route, Routes, useLocation } from "react-router-dom";
 
 import Expenses from "./components/Expenses";

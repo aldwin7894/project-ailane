@@ -9,8 +9,21 @@ const config: ForgeConfig = {
     asar: true,
     overwrite: true,
   },
-  rebuildConfig: {},
-  makers: [new MakerSquirrel({}), new MakerZIP({}, ["win32", "linux"])],
+  rebuildConfig: {
+    force: true,
+    extraModules: ["better-sqlite3"],
+  },
+  makers: [
+    new MakerSquirrel(
+      {
+        name: "ProjectAilane",
+        description: "project-ailane",
+        authors: "aldwin7894",
+      },
+      ["win32", "linux"],
+    ),
+    new MakerZIP({}, ["win32", "linux"]),
+  ],
   plugins: [
     new VitePlugin({
       // `build` can specify multiple entry builds, which can be Main process, Preload scripts, Worker process, etc.

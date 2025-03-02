@@ -1,6 +1,6 @@
 import { ColDef } from "ag-grid-community";
 import { AgGridReact } from "ag-grid-react";
-import { useEffect, useState } from "react";
+import { JSX, useEffect, useState } from "react";
 
 type Props = {
   sales: Sales[];

@@ -1,8 +1,11 @@
 CREATE TABLE IF NOT EXISTS sales_items (
   id                INTEGER PRIMARY KEY AUTOINCREMENT,
-  product_name      TEXT NOT NULL,
-  quantity          REAL NOT NULL,
+  sales_id          INTEGER,
+  product_name      TEXT,
+  quantity          REAL DEFAULT 0,
+  uom               TEXT,
   unit_price        REAL DEFAULT 0,
+  sale_price        REAL DEFAULT 0,
   total_amount      REAL DEFAULT 0,
   discount_amount   REAL DEFAULT 0,
   tax_amount        REAL DEFAULT 0,

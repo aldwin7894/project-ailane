@@ -1,3 +1,5 @@
+import { JSX } from "react";
+
 export default function Home(): JSX.Element {
   const ipcHandle = (): void => window.electron.ipcRenderer.send("ping");
 

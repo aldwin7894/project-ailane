@@ -1,6 +1,7 @@
 CREATE TABLE IF NOT EXISTS sales (
   id                INTEGER PRIMARY KEY AUTOINCREMENT,
   invoice_number    TEXT NOT NULL,
+  cogs_amount       REAL DEFAULT 0,
   total_amount      REAL DEFAULT 0,
   discount_amount   REAL DEFAULT 0,
   tax_amount        REAL DEFAULT 0,
