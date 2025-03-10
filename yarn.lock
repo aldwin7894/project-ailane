@@ -1047,10 +1047,10 @@
   resolved "https://registry.yarnpkg.com/@humanwhocodes/object-schema/-/object-schema-2.0.3.tgz#4a2868d75d6d6963e423bcf90b7fd1be343409d3"
   integrity sha512-93zYdMES/c1D69yZiKDBj0V24vqNzB/koF26KPaagAfd3P/4gUlh3Dys5ogAK+Exi9QyzlD8x/08Zt7wIKcDcA==
 
-"@iconify/json@^2.2.312":
-  version "2.2.312"
-  resolved "https://registry.yarnpkg.com/@iconify/json/-/json-2.2.312.tgz#cea7e41608a5662332087c641dba45ee8fe966e2"
-  integrity sha512-sujKsprCACPMVZHeNaxvc7HyONW916tUVw4zfEK+GmT7PkH73PdplmW1w2UWC07IC6oUYPZ2EE0pfdWHhWHjpQ==
+"@iconify/json@^2.2.315":
+  version "2.2.315"
+  resolved "https://registry.yarnpkg.com/@iconify/json/-/json-2.2.315.tgz#7e201f0d985c7cc6ccf685c25da811d7c23d38a1"
+  integrity sha512-ST+F6ZF+IpKm2eaABWftJ4stWbB8pcEd9Q5bshW8hcIW/kcvzwit3fI/5x3tFFscWUCxHGNU3JNVMtNlodHweQ==
   dependencies:
     "@iconify/types" "*"
     pathe "^1.1.2"
@@ -2799,10 +2799,10 @@ electron-winstaller@^5.0.0:
   optionalDependencies:
     "@electron/windows-sign" "^1.1.2"
 
-electron@^33.3.2:
-  version "33.4.2"
-  resolved "https://registry.yarnpkg.com/electron/-/electron-33.4.2.tgz#607870f0bb99c803e0e15d3966633234e15bddb5"
-  integrity sha512-kBoY1jlOCgQQJsVhaO4rYjKXL4FAsh6v42IzV5devYFFeMnciAPl02klrK5gD0VT8A2MeE4nulH32uYafca/VQ==
+electron@^34.3.0:
+  version "34.3.2"
+  resolved "https://registry.yarnpkg.com/electron/-/electron-34.3.2.tgz#bc6bef988e12f2b766640f45983bdb90a4ab587f"
+  integrity sha512-n9tzmFexVLxipZXwMTY30H10f0X9k2OP0SkpSwL5VvnDZi0l/Hc+8CEArKkQPbbSf/IS7nxgc96gtTaR+XoSBg==
   dependencies:
     "@electron/get" "^2.0.0"
     "@types/node" "^20.9.0"
