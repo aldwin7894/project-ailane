@@ -63,7 +63,7 @@
     "postcss-import": "^16.1.0",
     "postcss-nesting": "^13.0.1",
     "postcss-preset-env": "^10.1.5",
-    "preline": "^2.7.0",
+    "preline": "^3.0.0",
     "prettier": "^3.5.3",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
