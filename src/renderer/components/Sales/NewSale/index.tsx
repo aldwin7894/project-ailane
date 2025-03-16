@@ -1,39 +1,108 @@
 import { JSX } from "react";
+import { FieldErrors, useForm } from "react-hook-form";
 import { Link, useNavigate } from "react-router-dom";
+
+import CurrencyInput from "../../CurrencyInput";
+import DateInput from "../../DateInput";
+import PhoneInput from "../../PhoneInput";
+import TextInput from "../../TextInput";
 
 export default function NewSale(): JSX.Element {
   const navigate = useNavigate();
+  const {
+    register,
+    handleSubmit,
+    control,
+    formState: { errors },
+  } = useForm<Sales>({
+    mode: "all",
+    defaultValues: {
+      invoice_number: "",
+      invoice_date: new Date().toISOString(),
+      customer_name: "",
+      customer_contact: "",
+      cogs_amount: 0.0,
+      total_amount: 0.0,
+      discount_amount: 0.0,
+      tax_amount: 0.0,
+    },
+    shouldFocusError: true,
+  });
 
-  const newSale = async () => {
-    await window.api.createSale({
-      invoice_number: `INV-${Math.round(Math.random() * 100)}`,
-      total_amount: 1000,
-      discount_amount: 0,
-      tax_amount: 12,
-    });
-
+  const newSale = async (data: Sales) => {
+    console.log("submit-success", data);
+    await window.api.createSale(data);
     navigate("/sales");
   };
+  const onError = (errors: FieldErrors) => console.log("submit-error", errors);
 
   return (
-    <div className="flex flex-col gap-4">
+    <form
+      className="flex flex-col gap-4"
+      onSubmit={handleSubmit(newSale, onError)}
+    >
       <h1 className="text-2xl font-bold">New Sale</h1>
 
+      <div className="flex flex-col gap-1">
+        <TextInput
+          label="Invoice Number"
+          placeholder="Invoice Number"
+          {...register("invoice_number", {
+            required: "Invoice Number is required",
+          })}
+          errors={errors}
+        />
+        <TextInput
+          label="Customer Name"
+          placeholder="Customer Name"
+          {...register("customer_name")}
+          errors={errors}
+        />
+        <PhoneInput
+          label="Customer Contact"
+          placeholder="Customer Contact"
+          {...register("customer_contact", {
+            pattern: {
+              value: /^(\+63|0)\d{10}$/,
+              message: "Invalid phone number",
+            },
+          })}
+          errors={errors}
+        />
+        <DateInput
+          label="Invoice Date"
+          placeholder="Invoice Date"
+          name="invoice_date"
+          control={control}
+          rules={{
+            required: "Invoice Date is required",
+          }}
+        />
+        <CurrencyInput
+          label="Total Amount"
+          currencySymbol="₱"
+          {...register("total_amount", {
+            required: "Total Amount is required",
+            min: {
+              message: "Total Amount cannot be 0",
+              value: 0.01,
+            },
+          })}
+          errors={errors}
+        />
+      </div>
+
       <div className="flex flex-row gap-2">
-        <Link
-          to="/sales"
-          className="inline-flex items-center gap-x-2 rounded-lg border border-transparent bg-blue-600 px-4 py-3 text-sm font-semibold text-white hover:bg-blue-700 disabled:pointer-events-none disabled:opacity-50 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
-        >
+        <Link to="/sales" className="btn btn-outline">
           Cancel
         </Link>
-        <button
-          type="button"
-          className="inline-flex items-center gap-x-2 rounded-lg border border-transparent bg-blue-600 px-4 py-3 text-sm font-semibold text-white hover:bg-blue-700 disabled:pointer-events-none disabled:opacity-50 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
-          onClick={newSale}
-        >
-          Save
-        </button>
+        <input
+          id="submit"
+          type="submit"
+          className="btn btn-primary"
+          value="Submit"
+        />
       </div>
-    </div>
+    </form>
   );
 }

@@ -12,13 +12,21 @@ export default function SalesList({
   const [rowData, setRowData] = useState([...sales]);
   const colDefs: ColDef[] = [
     { headerName: "Invoice Number", field: "invoice_number" },
+    { headerName: "Date", field: "invoice_date" },
+    { headerName: "Customer", field: "customer_name" },
+    { headerName: "Contact", field: "customer_contact" },
     { headerName: "Total", field: "total_amount" },
     { headerName: "Discount", field: "discount_amount" },
     { headerName: "Tax", field: "tax_amount" },
   ];
 
   useEffect(() => {
-    setRowData([...sales]);
+    setRowData([
+      ...sales.map(sale => {
+        sale.invoice_date = new Date(sale.invoice_date).toLocaleDateString();
+        return sale;
+      }),
+    ]);
   }, [sales]);
 
   return (

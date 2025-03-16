@@ -3,7 +3,7 @@ import { join } from "path";
 import { electronApp, optimizer, is } from "@electron-toolkit/utils";
 import { app, shell, BrowserWindow, ipcMain } from "electron";
 
-import DB from "./database";
+import DB, { migrationRollback } from "./database";
 import icon from "../resources/icon.png";
 
 // eslint-disable-next-line @typescript-eslint/no-require-imports
@@ -61,6 +61,10 @@ app.whenReady().then(() => {
   ipcMain.on("ping", () => {
     console.log("pong");
   });
+  ipcMain.on("rollbackDb", () => {
+    console.log("rollback-db");
+    migrationRollback(DB);
+  });
 
   ipcMain.handle("get-sales", () => {
     const query = DB.prepare("SELECT * FROM sales");
@@ -69,17 +73,39 @@ app.whenReady().then(() => {
     return result;
   });
   ipcMain.handle("create-sale", (_, data: Sales) => {
-    const { invoice_number, total_amount, tax_amount, discount_amount } = data;
+    const {
+      invoice_number,
+      customer_name,
+      customer_contact,
+      invoice_date,
+      cogs_amount,
+      total_amount,
+      discount_amount,
+      tax_amount,
+    } = data;
     const query = DB.prepare(`
-      INSERT INTO sales (invoice_number, total_amount, tax_amount, total_amount)
-      VALUES(?, ?, ?, ?)
+      INSERT INTO sales (
+        invoice_number,
+        customer_name,
+        customer_contact,
+        invoice_date,
+        cogs_amount,
+        total_amount,
+        discount_amount,
+        tax_amount
+      )
+      VALUES(?, ?, ?, ?, ?, ?, ?, ?)
       RETURNING *
     `);
     const result = query.get(
       invoice_number,
+      customer_name,
+      customer_contact,
+      invoice_date,
+      cogs_amount,
       total_amount,
-      tax_amount,
       discount_amount,
+      tax_amount,
     );
     console.log("create-sale", result);
     return result;

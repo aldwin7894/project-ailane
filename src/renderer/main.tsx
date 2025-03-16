@@ -9,8 +9,7 @@ import ReactDOM from "react-dom/client";
 import { HashRouter } from "react-router-dom";
 
 import App from "./App";
-import "preline/preline";
-import "./assets/main.scss";
+import "./assets/main.css";
 
 // Register all community features
 ModuleRegistry.registerModules([AllCommunityModule]);

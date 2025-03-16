@@ -37,3 +37,6 @@ npm-debug.log.*
 !.vscode/multi-terminals.json
 !.vscode/extensions.json
 !.vscode/*.shared.json
+
+# DB Migration
+resources/migrations/version.txt

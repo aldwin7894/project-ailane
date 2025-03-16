@@ -1,18 +1,13 @@
 /** @type {import('tailwindcss').Config} */
+import { addDynamicIconSelectors } from "@iconify/tailwind";
+import aspectRatioPlugin from "@tailwindcss/aspect-ratio";
+import typographyPlugin from "@tailwindcss/typography";
 import defaultTheme from "tailwindcss/defaultTheme";
 import plugin from "tailwindcss/plugin";
-import typographyPlugin from "@tailwindcss/typography";
-import formsPlugin from "@tailwindcss/forms";
-import aspectRatioPlugin from "@tailwindcss/aspect-ratio";
 import animatecssPlugin from "tailwindcss-animatecss";
-import prelinePlugin from "preline/plugin";
-import { addDynamicIconSelectors } from "@iconify/tailwind";
 
 export default {
-  content: [
-    "./src/renderer/**/*.{js,jsx,ts,tsx}",
-    "node_modules/preline/dist/*.js",
-  ],
+  content: ["./src/renderer/**/*.{js,jsx,ts,tsx}"],
   darkMode: "media", // or 'class'
   theme: {
     extend: {
@@ -58,7 +53,6 @@ export default {
     },
   },
   plugins: [
-    prelinePlugin,
     typographyPlugin,
     formsPlugin,
     aspectRatioPlugin,
