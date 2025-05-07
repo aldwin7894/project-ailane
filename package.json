@@ -18,7 +18,7 @@
   "dependencies": {
     "@electron-toolkit/preload": "^3.0.1",
     "@electron-toolkit/utils": "^4.0.0",
-    "better-sqlite3": "^11.9.0",
+    "better-sqlite3": "^11.9.1",
     "electron-squirrel-startup": "^1.0.1"
   },
   "devDependencies": {
@@ -29,14 +29,14 @@
     "@electron-forge/plugin-vite": "7.7.0",
     "@electron/packager": "^18.3.6",
     "@electron/rebuild": "^3.7.1",
-    "@iconify/json": "^2.2.317",
+    "@iconify/json": "^2.2.334",
     "@iconify/tailwind": "^1.2.0",
     "@tailwindcss/aspect-ratio": "^0.4.2",
     "@tailwindcss/typography": "^0.5.16",
     "@tailwindcss/vite": "^4.0.14",
     "@types/better-sqlite3": "^7.6.12",
-    "@types/node": "^22.13.10",
-    "@types/react": "^19.0.10",
+    "@types/node": "^22.15.12",
+    "@types/react": "^19.1.0",
     "@types/react-dom": "^19.0.4",
     "@types/react-router-dom": "^5.3.3",
     "@typescript-eslint/eslint-plugin": "^8.26.1",
@@ -47,7 +47,7 @@
     "clsx": "^2.1.1",
     "cssnano": "^7.0.6",
     "cssnano-preset-advanced": "^7.0.6",
-    "daisyui": "^5.0.4",
+    "daisyui": "^5.0.35",
     "electron": "^35.0.2",
     "es-toolkit": "^1.33.0",
     "eslint": "8.57.0",
@@ -65,7 +65,7 @@
     "postcss-nesting": "^13.0.1",
     "postcss-preset-env": "^10.1.5",
     "prettier": "^3.5.3",
-    "react": "^19.0.0",
+    "react": "^19.1.0",
     "react-day-picker": "^9.6.2",
     "react-dom": "^19.0.0",
     "react-hook-form": "^7.54.2",
@@ -74,7 +74,7 @@
     "tailwindcss-animatecss": "^3.0.5",
     "ts-node": "^10.9.2",
     "typescript": "5.8.2",
-    "vite": "^6.2.2"
+    "vite": "^6.3.4"
   },
   "engines": {
     "node": "22.14.0",
