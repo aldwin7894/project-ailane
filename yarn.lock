@@ -1819,24 +1819,24 @@ acorn@^8.11.0, acorn@^8.4.1, acorn@^8.9.0:
   resolved "https://registry.yarnpkg.com/acorn/-/acorn-8.14.1.tgz#721d5dc10f7d5b5609a891773d47731796935dfb"
   integrity sha512-OvQ/2pUDKmgfCg++xsTX1wGxfTaszcHVcTctW4UJB4hibJx2HXxxO5UmVgyjMa+ZDsiaf5wWLXYpRWMmBI0QHg==
 
-ag-charts-types@11.1.1:
-  version "11.1.1"
-  resolved "https://registry.yarnpkg.com/ag-charts-types/-/ag-charts-types-11.1.1.tgz#2d5132978248c9422b7129df6d2c3537c1ad99c5"
-  integrity sha512-bRmUcf5VVhEEekhX8Vk0NSwa8Te8YM/zchjyYKR2CX4vDYiwoohM1Jg9RFvbIhVbLC1S6QrPEbx5v2C6RDfpSA==
+ag-charts-types@11.3.1:
+  version "11.3.1"
+  resolved "https://registry.yarnpkg.com/ag-charts-types/-/ag-charts-types-11.3.1.tgz#5664cb61ecb3c8318e22bd1eb60cc4c4dfbb261e"
+  integrity sha512-kUSSypwsmkQDT5Oqgcr3zYQShzQuhvYeHaT1l2ocUrz3hBzkIiYwzp9CVG3Vs//M9TUCJLTcR0CBIr9ADhPITw==
 
-ag-grid-community@33.1.1:
-  version "33.1.1"
-  resolved "https://registry.yarnpkg.com/ag-grid-community/-/ag-grid-community-33.1.1.tgz#04f0317317ea1d35f128dc1a4f8e70a04aa27774"
-  integrity sha512-CNubIro0ipj4nfQ5WJPG9Isp7UI6MMDvNzrPdHNf3W+IoM8Uv3RUhjEn7xQqpQHuu6o/tMjrqpacipMUkhzqnw==
+ag-grid-community@33.3.1:
+  version "33.3.1"
+  resolved "https://registry.yarnpkg.com/ag-grid-community/-/ag-grid-community-33.3.1.tgz#598a3322dda944455d0ca69ce3a8f32403b0a0cb"
+  integrity sha512-c3JXKY5K5V5KVZ6rhFc13hK/8UzaZNwTqL70YKkqUbqwOcogDVVeG4I25W6o5YOlFO6LFN/5xFnFPASWn4LwBw==
   dependencies:
-    ag-charts-types "11.1.1"
+    ag-charts-types "11.3.1"
 
-ag-grid-react@^33.1.1:
-  version "33.1.1"
-  resolved "https://registry.yarnpkg.com/ag-grid-react/-/ag-grid-react-33.1.1.tgz#58346ba67bb595905816775d02dfda40c63ceb5f"
-  integrity sha512-xJ+t2gpqUUwpFqAeDvKz/GLVR4unkOghfQBr8iIY9RAdGFarYFClJavsOa8XPVVUqEB9OIuPVFnOdtocbX0jeA==
+ag-grid-react@^33.3.1:
+  version "33.3.1"
+  resolved "https://registry.yarnpkg.com/ag-grid-react/-/ag-grid-react-33.3.1.tgz#b6c10e922b493c79408e09335bb30c91135a1aea"
+  integrity sha512-CHuuHxzuz2rsKuyxjuGnBadwm0/I2DCG4j1WgIa2wJkdlTUrcKjF6RD9qwfRLYKA4P40shG640emVuU6/qiZLA==
   dependencies:
-    ag-grid-community "33.1.1"
+    ag-grid-community "33.3.1"
     prop-types "^15.8.1"
 
 agent-base@6, agent-base@^6.0.2:
