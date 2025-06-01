@@ -16,7 +16,7 @@
     "rebuild": "electron-rebuild -f -w better-sqlite3"
   },
   "dependencies": {
-    "@electron-toolkit/preload": "^3.0.1",
+    "@electron-toolkit/preload": "^3.0.2",
     "@electron-toolkit/utils": "^4.0.0",
     "better-sqlite3": "^11.9.1",
     "electron-squirrel-startup": "^1.0.1"
@@ -39,13 +39,13 @@
     "@types/react": "^19.1.0",
     "@types/react-dom": "^19.0.4",
     "@types/react-router-dom": "^5.3.3",
-    "@typescript-eslint/eslint-plugin": "^8.26.1",
+    "@typescript-eslint/eslint-plugin": "^8.32.1",
     "@typescript-eslint/parser": "^8.26.1",
     "@vitejs/plugin-react": "^4.3.4",
-    "ag-grid-react": "^33.1.1",
+    "ag-grid-react": "^33.3.1",
     "autoprefixer": "^10.4.21",
     "clsx": "^2.1.1",
-    "cssnano": "^7.0.6",
+    "cssnano": "^7.0.7",
     "cssnano-preset-advanced": "^7.0.6",
     "daisyui": "^5.0.35",
     "electron": "^35.0.2",
