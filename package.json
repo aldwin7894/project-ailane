@@ -41,7 +41,7 @@
     "@types/react-router-dom": "^5.3.3",
     "@typescript-eslint/eslint-plugin": "^8.32.1",
     "@typescript-eslint/parser": "^8.42.0",
-    "@vitejs/plugin-react": "^4.3.4",
+    "@vitejs/plugin-react": "^5.0.3",
     "ag-grid-react": "^33.3.1",
     "autoprefixer": "^10.4.21",
     "clsx": "^2.1.1",
