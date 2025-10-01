@@ -6054,10 +6054,10 @@ rc@^1.2.7:
     minimist "^1.2.0"
     strip-json-comments "~2.0.1"
 
-react-day-picker@^9.9.0:
-  version "9.9.0"
-  resolved "https://registry.yarnpkg.com/react-day-picker/-/react-day-picker-9.9.0.tgz#494da0f1470e8f0ca61c30100b17615687b68393"
-  integrity sha512-NtkJbuX6cl/VaGNb3sVVhmMA6LSMnL5G3xNL+61IyoZj0mUZFWTg4hmj7PHjIQ8MXN9dHWhUHFoJWG6y60DKSg==
+react-day-picker@^9.11.0:
+  version "9.11.0"
+  resolved "https://registry.yarnpkg.com/react-day-picker/-/react-day-picker-9.11.0.tgz#3695e1fa1438cded1a02ff55dfe868fdd07aa67a"
+  integrity sha512-L4FYOaPrr3+AEROeP6IG2mCORZZfxJDkJI2df8mv1jyPrNYeccgmFPZDaHyAuPCBCddQFozkxbikj2NhMEYfDQ==
   dependencies:
     "@date-fns/tz" "^1.4.1"
     date-fns "^4.1.0"
