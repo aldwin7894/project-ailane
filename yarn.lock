@@ -16,7 +16,7 @@
   resolved "https://registry.yarnpkg.com/@babel/compat-data/-/compat-data-7.28.4.tgz#96fdf1af1b8859c8474ab39c295312bfb7c24b04"
   integrity sha512-YsmSKC29MJwf0gF8Rjjrg5LQCmyh+j/nD8/eP7f+BeoQTKYqs9RoWbjGOdy0+1Ekr68RJZMUOPVQaQisnIo4Rw==
 
-"@babel/core@^7.28.3":
+"@babel/core@^7.28.4":
   version "7.28.4"
   resolved "https://registry.yarnpkg.com/@babel/core/-/core-7.28.4.tgz#12a550b8794452df4c8b084f95003bce1742d496"
   integrity sha512-2BCOP7TN8M+gVDj7/ht3hsaO/B/n5oDbiAyyvnRlNOs+u1o+JWNYTQrmpuNp1/Wq2gcFrI01JAW+paEKDMx/CA==
@@ -589,21 +589,21 @@
     sudo-prompt "^9.1.1"
     username "^5.1.0"
 
+"@electron-forge/maker-base@7.10.2":
+  version "7.10.2"
+  resolved "https://registry.yarnpkg.com/@electron-forge/maker-base/-/maker-base-7.10.2.tgz#0ab9352eceace4c7e10dca3dc66edc79aefb3e9a"
+  integrity sha512-1QN4qnPVTjo+qWYG+s0kYv7XcuIowsPVvbl718FgJUcvkxyRjUA6kWHjFxRvdV6g7Sa2PzZBF+/Mrjpws1lehQ==
+  dependencies:
+    "@electron-forge/shared-types" "7.10.2"
+    fs-extra "^10.0.0"
+    which "^2.0.2"
+
 "@electron-forge/maker-base@7.7.0":
   version "7.7.0"
   resolved "https://registry.yarnpkg.com/@electron-forge/maker-base/-/maker-base-7.7.0.tgz#11882c4a3638a3031103a339459184430f6daa89"
   integrity sha512-9u+mmBLBAUHuH0+IGw94EGVTDD4CPKX05h5pp5/PIaijy16ss5dymK4vEp3s2XJMFlza2PsCgLLYBgDcAE2Dqg==
   dependencies:
     "@electron-forge/shared-types" "7.7.0"
-    fs-extra "^10.0.0"
-    which "^2.0.2"
-
-"@electron-forge/maker-base@7.8.3":
-  version "7.8.3"
-  resolved "https://registry.yarnpkg.com/@electron-forge/maker-base/-/maker-base-7.8.3.tgz#e500ebe3eacfa84d3f02faac2aa3b2773c27250a"
-  integrity sha512-WmF66cHdziaK8Asi7IRTLxZjCZ8IqXXHr6IPl4d5oatN6s5RG+HHzG1hiJ7LzlOEntqdSpE8Wh2nB2TmyR4huQ==
-  dependencies:
-    "@electron-forge/shared-types" "7.8.3"
     fs-extra "^10.0.0"
     which "^2.0.2"
 
@@ -628,13 +628,13 @@
   optionalDependencies:
     electron-winstaller "^5.3.0"
 
-"@electron-forge/maker-zip@7.8.3":
-  version "7.8.3"
-  resolved "https://registry.yarnpkg.com/@electron-forge/maker-zip/-/maker-zip-7.8.3.tgz#450b17d6517633bbdeb82397600db61abd8461d6"
-  integrity sha512-ytao285wKAjKBO6eULzLeqUDP5Zh7beQlGyHjgOMknk7FI0sNy+zGdh3CrCGIhkXSHU/DpukPwRu2SiKvIaIGA==
+"@electron-forge/maker-zip@7.10.2":
+  version "7.10.2"
+  resolved "https://registry.yarnpkg.com/@electron-forge/maker-zip/-/maker-zip-7.10.2.tgz#164bcf76cf3c18ed8bb0c1057c9d1a1a8e05d73c"
+  integrity sha512-APRqVPM+O1rj4O7sk5f8tqJpS5UgxcUJEsCnXN4JRpdRvsOlMopzYZdazlCLH9l7S+r4ZKirjtMluIGeYq8YOg==
   dependencies:
-    "@electron-forge/maker-base" "7.8.3"
-    "@electron-forge/shared-types" "7.8.3"
+    "@electron-forge/maker-base" "7.10.2"
+    "@electron-forge/shared-types" "7.10.2"
     cross-zip "^4.0.0"
     fs-extra "^10.0.0"
     got "^11.8.5"
@@ -667,22 +667,22 @@
   dependencies:
     "@electron-forge/shared-types" "7.7.0"
 
+"@electron-forge/shared-types@7.10.2":
+  version "7.10.2"
+  resolved "https://registry.yarnpkg.com/@electron-forge/shared-types/-/shared-types-7.10.2.tgz#86d37f0ac6800e2197d9878c3445a28485d3abea"
+  integrity sha512-e2pd9RsdbKwsNf6UtKoolmJGy92Nc0/XO4SI91doV8cM954hM2XSYz3VHoqXebMFAF1JDfXoEUt6UCRbEDgMgw==
+  dependencies:
+    "@electron-forge/tracer" "7.10.2"
+    "@electron/packager" "^18.3.5"
+    "@electron/rebuild" "^3.7.0"
+    listr2 "^7.0.2"
+
 "@electron-forge/shared-types@7.7.0":
   version "7.7.0"
   resolved "https://registry.yarnpkg.com/@electron-forge/shared-types/-/shared-types-7.7.0.tgz#936e6ded34e53a2bbd82583ce1e4c127e423f33d"
   integrity sha512-1zQsmudkAuHv0HnJtSJY3pvTeuN3fnSa9BR6cbeUlcpOfrnG4OTG03FqerHfyIWaBRVy7jGgif0NhKKE9azKyg==
   dependencies:
     "@electron-forge/tracer" "7.7.0"
-    "@electron/packager" "^18.3.5"
-    "@electron/rebuild" "^3.7.0"
-    listr2 "^7.0.2"
-
-"@electron-forge/shared-types@7.8.3":
-  version "7.8.3"
-  resolved "https://registry.yarnpkg.com/@electron-forge/shared-types/-/shared-types-7.8.3.tgz#0b7c54b3fa09bfdc931e22d254b70f1685744fde"
-  integrity sha512-gkZtD7ALXHPDOthJo1rQYLDNfG09fdDRMWvjEgaXdF3Z69xXFfnOWPNuOkRUODNalMnuuGs6l7jDl+QFQgHlDg==
-  dependencies:
-    "@electron-forge/tracer" "7.8.3"
     "@electron/packager" "^18.3.5"
     "@electron/rebuild" "^3.7.0"
     listr2 "^7.0.2"
@@ -735,17 +735,17 @@
     "@electron-forge/template-base" "7.7.0"
     fs-extra "^10.0.0"
 
+"@electron-forge/tracer@7.10.2":
+  version "7.10.2"
+  resolved "https://registry.yarnpkg.com/@electron-forge/tracer/-/tracer-7.10.2.tgz#ef6b274127e71c3a09271ba2762345fc1e89c377"
+  integrity sha512-jhLLQbttfZViSOYn/3SJc8HML+jNZAytPVJwgGGd3coUiFysWJ2Xald99iqOiouPAhIigBfNPxQb/q/EbcDu4g==
+  dependencies:
+    chrome-trace-event "^1.0.3"
+
 "@electron-forge/tracer@7.7.0":
   version "7.7.0"
   resolved "https://registry.yarnpkg.com/@electron-forge/tracer/-/tracer-7.7.0.tgz#a90be0b2e4c797b6cd3f1a3abcb0649cd397cf6e"
   integrity sha512-R/JiGFzWhwfVyc6ioT4l5FFChRLS4Z2tWPeQfPcyoemdpzKpI1rvMHti42gzWXFW8GdzkhG0G3ZWfKiF3y3x/Q==
-  dependencies:
-    chrome-trace-event "^1.0.3"
-
-"@electron-forge/tracer@7.8.3":
-  version "7.8.3"
-  resolved "https://registry.yarnpkg.com/@electron-forge/tracer/-/tracer-7.8.3.tgz#c2c27fb9b2bd770b39f02bc3ae6e254064421af6"
-  integrity sha512-YVVDaPEUOvR1z+DDdj8wR/vO9OSlC91wz4/2Iqe9rqQz8sztnnQBClMAZTqu9bkDTFyHrns8j8v7tPVuVS6ULQ==
   dependencies:
     chrome-trace-event "^1.0.3"
 
@@ -1278,10 +1278,10 @@
   resolved "https://registry.yarnpkg.com/@pkgr/core/-/core-0.2.9.tgz#d229a7b7f9dac167a156992ef23c7f023653f53b"
   integrity sha512-QNqXyfVS2wm9hweSYD2O7F0G06uurj9kZ96TRQE5Y9hU7+tgdZwIkbAKc5Ocy1HxEY2kuDQa6cQ1WRs/O5LFKA==
 
-"@rolldown/pluginutils@1.0.0-beta.34":
-  version "1.0.0-beta.34"
-  resolved "https://registry.yarnpkg.com/@rolldown/pluginutils/-/pluginutils-1.0.0-beta.34.tgz#4421645c676926faa4574940d72fa7ce0ec7d419"
-  integrity sha512-LyAREkZHP5pMom7c24meKmJCdhf2hEyvam2q0unr3or9ydwDL+DJ8chTF6Av/RFPb3rH8UFBdMzO5MxTZW97oA==
+"@rolldown/pluginutils@1.0.0-beta.38":
+  version "1.0.0-beta.38"
+  resolved "https://registry.yarnpkg.com/@rolldown/pluginutils/-/pluginutils-1.0.0-beta.38.tgz#95253608c4629eb2a5f3d656009ac9ba031eb292"
+  integrity sha512-N/ICGKleNhA5nc9XXQG/kkKHJ7S55u0x0XUJbbkmdCnFuoRkM1Il12q9q0eX19+M7KKUEPw/daUPIRnxhcxAIw==
 
 "@rollup/rollup-android-arm-eabi@4.50.1":
   version "4.50.1"
@@ -1884,15 +1884,15 @@
   resolved "https://registry.yarnpkg.com/@unrs/resolver-binding-win32-x64-msvc/-/resolver-binding-win32-x64-msvc-1.7.2.tgz#7fd81d89e34a711d398ca87f6d5842735d49721e"
   integrity sha512-friS8NEQfHaDbkThxopGk+LuE5v3iY0StruifjQEt7SLbA46OnfgMO15sOTkbpJkol6RB+1l1TYPXh0sCddpvA==
 
-"@vitejs/plugin-react@^5.0.2":
-  version "5.0.2"
-  resolved "https://registry.yarnpkg.com/@vitejs/plugin-react/-/plugin-react-5.0.2.tgz#3b5d73fc0e4370a0fafe27154d2c208e2bca8f71"
-  integrity sha512-tmyFgixPZCx2+e6VO9TNITWcCQl8+Nl/E8YbAyPVv85QCc7/A3JrdfG2A8gIzvVhWuzMOVrFW1aReaNxrI6tbw==
+"@vitejs/plugin-react@^5.0.4":
+  version "5.0.4"
+  resolved "https://registry.yarnpkg.com/@vitejs/plugin-react/-/plugin-react-5.0.4.tgz#d642058e89c5b712655c8cbd13482f5813519602"
+  integrity sha512-La0KD0vGkVkSk6K+piWDKRUyg8Rl5iAIKRMH0vMJI0Eg47bq1eOxmoObAaQG37WMW9MSyk7Cs8EIWwJC1PtzKA==
   dependencies:
-    "@babel/core" "^7.28.3"
+    "@babel/core" "^7.28.4"
     "@babel/plugin-transform-react-jsx-self" "^7.27.1"
     "@babel/plugin-transform-react-jsx-source" "^7.27.1"
-    "@rolldown/pluginutils" "1.0.0-beta.34"
+    "@rolldown/pluginutils" "1.0.0-beta.38"
     "@types/babel__core" "^7.20.5"
     react-refresh "^0.17.0"
 
@@ -3248,10 +3248,10 @@ escape-string-regexp@^4.0.0:
   resolved "https://registry.yarnpkg.com/escape-string-regexp/-/escape-string-regexp-4.0.0.tgz#14ba83a5d373e3d311e5afca29cf5bfad965bf34"
   integrity sha512-TtpcNJ3XAzx3Gq8sWRzJaVajRs0uVxA2YAkdb1jm2YkPz4G6egUFAyA3n5vtEIZefPk5Wa4UXbKuS5fKkJWdgA==
 
-eslint-config-prettier@^10.1.1:
-  version "10.1.1"
-  resolved "https://registry.yarnpkg.com/eslint-config-prettier/-/eslint-config-prettier-10.1.1.tgz#cf0ff6e5c4e7e15f129f1f1ce2a5ecba92dec132"
-  integrity sha512-4EQQr6wXwS+ZJSzaR5ZCrYgLxqvUjdXctaEtBqHcbkW944B1NQyO4qpdHQbXBONfwxXdkAY81HH4+LUfrg+zPw==
+eslint-config-prettier@^10.1.8:
+  version "10.1.8"
+  resolved "https://registry.yarnpkg.com/eslint-config-prettier/-/eslint-config-prettier-10.1.8.tgz#15734ce4af8c2778cc32f0b01b37b0b5cd1ecb97"
+  integrity sha512-82GZUjRS0p/jganf6q1rEO25VSoHH0hKPCTrgillPjdI/3bgBhAE1QzHrHTizjpRvy6pGAvKjDJtk2pF9NDq8w==
 
 eslint-import-resolver-node@^0.3.9:
   version "0.3.9"
@@ -6054,10 +6054,10 @@ rc@^1.2.7:
     minimist "^1.2.0"
     strip-json-comments "~2.0.1"
 
-react-day-picker@^9.9.0:
-  version "9.9.0"
-  resolved "https://registry.yarnpkg.com/react-day-picker/-/react-day-picker-9.9.0.tgz#494da0f1470e8f0ca61c30100b17615687b68393"
-  integrity sha512-NtkJbuX6cl/VaGNb3sVVhmMA6LSMnL5G3xNL+61IyoZj0mUZFWTg4hmj7PHjIQ8MXN9dHWhUHFoJWG6y60DKSg==
+react-day-picker@^9.11.1:
+  version "9.11.1"
+  resolved "https://registry.yarnpkg.com/react-day-picker/-/react-day-picker-9.11.1.tgz#00ea070eb2c011b038c3332f37cd87d4db251bba"
+  integrity sha512-l3ub6o8NlchqIjPKrRFUCkTUEq6KwemQlfv3XZzzwpUeGwmDJ+0u0Upmt38hJyd7D/vn2dQoOoLV/qAp0o3uUw==
   dependencies:
     "@date-fns/tz" "^1.4.1"
     date-fns "^4.1.0"
