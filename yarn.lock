@@ -7273,10 +7273,10 @@ vary@~1.1.2:
   resolved "https://registry.yarnpkg.com/vary/-/vary-1.1.2.tgz#2299f02c6ded30d4a5961b0b9f74524a18f634fc"
   integrity sha512-BNGbWLfd0eUPabhkXUVm0j8uuvREyTh5ovRa/dyow/BqAbZJyC+5fU+IzQOzmAKzYqYRAISoRhdQr3eIZ/PXqg==
 
-vite@^7.1.5:
-  version "7.1.5"
-  resolved "https://registry.yarnpkg.com/vite/-/vite-7.1.5.tgz#4dbcb48c6313116689be540466fc80faa377be38"
-  integrity sha512-4cKBO9wR75r0BeIWWWId9XK9Lj6La5X846Zw9dFfzMRw38IlTk2iCcUt6hsyiDRcPidc55ZParFYDXi0nXOeLQ==
+vite@^7.1.10:
+  version "7.1.10"
+  resolved "https://registry.yarnpkg.com/vite/-/vite-7.1.10.tgz#47c9970f3b0fe9057bfbcfeff8cd370edd7bd41b"
+  integrity sha512-CmuvUBzVJ/e3HGxhg6cYk88NGgTnBoOo7ogtfJJ0fefUWAxN/WDSUa50o+oVBxuIhO8FoEZW0j2eW7sfjs5EtA==
   dependencies:
     esbuild "^0.25.0"
     fdir "^6.5.0"
