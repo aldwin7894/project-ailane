@@ -1146,13 +1146,13 @@
   resolved "https://registry.yarnpkg.com/@humanwhocodes/object-schema/-/object-schema-2.0.3.tgz#4a2868d75d6d6963e423bcf90b7fd1be343409d3"
   integrity sha512-93zYdMES/c1D69yZiKDBj0V24vqNzB/koF26KPaagAfd3P/4gUlh3Dys5ogAK+Exi9QyzlD8x/08Zt7wIKcDcA==
 
-"@iconify/json@^2.2.382":
-  version "2.2.382"
-  resolved "https://registry.yarnpkg.com/@iconify/json/-/json-2.2.382.tgz#096b0a0df4bff707750e50fa766624142d47f627"
-  integrity sha512-1UT0ouWPVXNteS+kaQjtDvxKy/swWqB84fq9b+xbpE7nhgfak7ljYneWSXTDU+SyfL112F9978p7Mf3C3Q/8LQ==
+"@iconify/json@^2.2.395":
+  version "2.2.395"
+  resolved "https://registry.yarnpkg.com/@iconify/json/-/json-2.2.395.tgz#e07eb237c885f423b89424cdeec6afbee8c1bb3d"
+  integrity sha512-XSYOnlGqiZhJkFFBUiVK4C5VIiv4rxyKtCmkQ9nS4zfMpS4xT0BF9+qWUKOHYgeCzCLghyWfrm6Eti3Sv5kfqQ==
   dependencies:
     "@iconify/types" "*"
-    pathe "^1.1.2"
+    pathe "^2.0.0"
 
 "@iconify/tailwind@^1.2.0":
   version "1.2.0"
@@ -5417,10 +5417,10 @@ path-type@^2.0.0:
   dependencies:
     pify "^2.0.0"
 
-pathe@^1.1.2:
-  version "1.1.2"
-  resolved "https://registry.yarnpkg.com/pathe/-/pathe-1.1.2.tgz#6c4cb47a945692e48a1ddd6e4094d170516437ec"
-  integrity sha512-whLdWMYL2TwI08hn8/ZqAbrVemu0LNaNNJZX73O6qaIdCTfXutsLhMkjdENX0qhsQ9uIimo4/aQOmXkoon2nDQ==
+pathe@^2.0.0:
+  version "2.0.3"
+  resolved "https://registry.yarnpkg.com/pathe/-/pathe-2.0.3.tgz#3ecbec55421685b70a9da872b2cff3e1cbed1716"
+  integrity sha512-WUjGcAqP1gQacoQe+OBJsFA7Ld4DyXuUIjZ5cc75cLHvJ7dtNsTugphxIADwspS+AraAUePCKrSVtPLFj/F88w==
 
 pe-library@^1.0.1:
   version "1.0.1"
