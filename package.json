@@ -46,7 +46,7 @@
     "autoprefixer": "^10.4.21",
     "clsx": "^2.1.1",
     "cssnano": "^7.0.7",
-    "cssnano-preset-advanced": "^7.0.6",
+    "cssnano-preset-advanced": "^7.0.9",
     "daisyui": "^5.0.35",
     "electron": "^35.0.2",
     "es-toolkit": "^1.41.0",
