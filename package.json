@@ -47,7 +47,7 @@
     "clsx": "^2.1.1",
     "cssnano": "^7.0.7",
     "cssnano-preset-advanced": "^7.0.10",
-    "daisyui": "^5.0.35",
+    "daisyui": "^5.5.14",
     "electron": "^35.0.2",
     "es-toolkit": "^1.41.0",
     "eslint": "8.57.0",
